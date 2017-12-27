@@ -15,7 +15,7 @@ var req = http.get(options, function (res) {
         var body = Buffer.concat(bodyChunks);
         var obj = JSON.parse(body);
         console.log(obj['deal']);
-        //console.log('' + body);
+//        console.log('' + body);
     })
 });
 
