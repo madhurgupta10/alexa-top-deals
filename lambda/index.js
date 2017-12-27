@@ -1,5 +1,4 @@
 "use strict";
-
 var Alexa = require("alexa-sdk");
 var SKILL_NAME = "Top Deals";
 var APP_ID = undefined;
@@ -22,7 +21,7 @@ var handlers = {
         this.emit(":ask", prompt, reprompt);
     },
 
-    'Intent': function() {
+    'topDealsIntent': function() {
         var prompt = "";
         var reprompt = "";
         this.emit(":ask", prompt, reprompt);
@@ -43,4 +42,8 @@ var handlers = {
 
     }
 
+}
+
+function dealfinder() {
+    
 }
