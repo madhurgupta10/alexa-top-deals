@@ -22,6 +22,7 @@ var handlers = {
     },
 
     'topDealsIntent': function() {
+        var r = dealer("top");
         var prompt = "";
         var reprompt = "";
         this.emit(":ask", prompt, reprompt);
@@ -53,7 +54,7 @@ function dealer(query) {
 
     var req = http.get(options, function (res) {
 
-        //      console.log('STATUS: ' + res.statusCode);
+//      console.log('STATUS: ' + res.statusCode);
         if (res.statusCode + '' == '200') {
             var bodyChunks = [];
             res.on('data', function (chunk) {
@@ -63,7 +64,7 @@ function dealer(query) {
                 var obj = JSON.parse(body);
                 console.log(obj['deal']);
                 return obj;
-                //              console.log('' + body);
+//              console.log('' + body);
             })
         }
         else {
@@ -71,6 +72,3 @@ function dealer(query) {
         }
     });
 }
-
-var r = dealer("top");
-console.log(r);
