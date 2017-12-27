@@ -1,10 +1,10 @@
-var http = require('http');
-var options = {
-    host: 'top-deals-api.herokuapp.com',
-    path: '/top'
-};
+function dealer(query) {
+    var http = require('http');
+    var options = {
+        host: 'top-deals-api.herokuapp.com',
+        path: '/'+query
+    };
 
-function dealer() {
     var req = http.get(options, function (res) {
 
 //      console.log('STATUS: ' + res.statusCode);
@@ -26,5 +26,5 @@ function dealer() {
     });
 }
 
-var r = dealer();
+var r = dealer("top");
 console.log(r);
