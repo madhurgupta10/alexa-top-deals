@@ -57,10 +57,10 @@ function finder(data) {
         data = JSON.parse(data);
         data = data;
         data = data['deal'][0]['deal'];
-        //var prompt = global_data;
-        //var reprompt = global_data;
-        //return [prompt, reprompt];
     });
+    setTimeout(function () {
+        return ""+data; 
+    }, 3000);
 }
 
 function dealer(query) {
