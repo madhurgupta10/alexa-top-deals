@@ -59,8 +59,8 @@ function finder() {
         data = data['deal'][0]['deal'];
         var prompt = global_data;
         var reprompt = global_data;
+        return [prompt, reprompt];
     });
-    return [prompt, reprompt];
 }
 
 function dealer(query) {
