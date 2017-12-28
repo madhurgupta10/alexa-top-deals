@@ -10,7 +10,7 @@ function finder(data) {
         data = data;
         data = data['deal'][0]['deal'];
         answer = data;
-        return data;
+        //return answer;
         // console.log(data);
     });
 }

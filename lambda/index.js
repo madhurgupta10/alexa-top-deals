@@ -14,8 +14,8 @@ function finder(data) {
         data = JSON.parse(data);
         data = data;
         data = data['deal'][0]['deal'];
-        answer = data;
-        return data;
+        // answer = data;
+        // return data;
         // console.log(data);
     });
 }
@@ -61,8 +61,14 @@ var handlers = {
 
     'topDealsIntent': function() {
         finder("top");
-        setTimeout(function () { var prompt = answer; var reprompt = answer; }, 1000);
-        this.emit(":ask", prompt, reprompt);
+        var prompt = function () {
+            setTimeout(function () {
+                var prompt = answer;
+                var reprompt = answer;
+            }, 1000);
+            return prompt + "";
+        }
+        this.emit(":ask", prompt, "reprompt");
     },
 
     'AMAZON.HelpIntent': function() {
@@ -81,4 +87,3 @@ var handlers = {
     }
 
 }
-

@@ -1,6 +1,18 @@
 {
   "deal": [
     {
+      "deal": "Borges Olive Oil Extra Light Flavours of Olives 2L Rs. 999, 5L [email\u00a0protected] Amazon ", 
+      "link": "http://amzn.to/2CifISo"
+    }, 
+    {
+      "deal": "Borges Canola Oil 1L Rs. 159 @ Amazon ", 
+      "link": "http://amzn.to/2BQUk39"
+    }, 
+    {
+      "deal": "[First Time App Users] Home Smart Portable Vacuum Cleaner Rs. 198 - PayTmMall  Use Code - MALL100", 
+      "link": "http://bit.ly/2Cg7aLH"
+    }, 
+    {
       "deal": "[New Users] Levi's Brief from Rs. 43 - Myntra  Use Code - MYNTRANEW300 ", 
       "link": "http://bit.ly/2BMHl2p"
     }, 
@@ -21,7 +33,7 @@
       "link": "http://bit.ly/2BPtpok"
     }, 
     {
-      "deal": "Men's Top Brands Winter Wear Minimum 70% Off @ Flipkart ", 
+      "deal": "Men's Top Brands Winter Wear Minimum 70% Off @ Flipkart  ", 
       "link": "http://bit.ly/2CeKH1E"
     }, 
     {
@@ -105,7 +117,7 @@
       "link": "http://bit.ly/2Dr0Aiw"
     }, 
     {
-      "deal": "UBER 50% off on next 5 Ride on Link UPI Account ", 
+      "deal": "UBER 50% off on next 5 Ride on Link UPI Account  ", 
       "link": "http://ubr.to/2CkduQ4"
     }, 
     {
@@ -147,18 +159,6 @@
     {
       "deal": "HP 400 Bluetooth Speakers Rs. 1019 @Amazon ", 
       "link": "http://amzn.to/2pIXuV2"
-    }, 
-    {
-      "deal": "[Pantry] Surf Excel Easy Wash Detergent Powder - 4 kg at Rs. 390 - Amazon ", 
-      "link": "http://amzn.to/2Drau3L"
-    }, 
-    {
-      "deal": "[Pantry] Kissan Fresh Tomato Ketchup, 950 g Rs.99 - Amazon ", 
-      "link": "http://amzn.to/2CgyIhz"
-    }, 
-    {
-      "deal": "Haixing Plastic Plate 20.5cm, Multicolour at Rs. 44 ", 
-      "link": "http://amzn.to/2Dsry9n"
     }
   ]
 }
