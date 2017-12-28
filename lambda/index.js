@@ -68,8 +68,10 @@ var handlers = {
 
     'topDealsIntent': function() {
         finder("top");
-        var prompt = mine();
-        this.emit(":ask", prompt, "reprompt");
+        const prompt = mine();
+        this.response.cardRenderer("DEAL", prompt);
+        this.response.speak(prompt);
+        this.emit(':responseReady');
     },
 
     'AMAZON.HelpIntent': function() {
