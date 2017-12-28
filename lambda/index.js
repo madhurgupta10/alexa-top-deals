@@ -29,8 +29,8 @@ var handlers = {
     },
 
     'AMAZON.HelpIntent': function() {
-        var prompt = "";
-        var reprompt = "";
+        var prompt = "Try saying. Alexa, find me the top ten deals on Amazon";
+        var reprompt = "Try saying. Alexa, find me the top ten deals on Flipkart";
         this.emit(":ask", prompt, reprompt);
     },
 
@@ -47,28 +47,23 @@ var handlers = {
 
 function dealer(query) {
     var http = require('http');
+    var fs = require('fs');
     var options = {
         host: 'top-deals-api.herokuapp.com',
-        path: '/' + query
+        path: '/'+query
     };
 
     var req = http.get(options, function (res) {
-
-//      console.log('STATUS: ' + res.statusCode);
-        if (res.statusCode + '' == '200') {
-            var bodyChunks = [];
-            res.on('data', function (chunk) {
-                bodyChunks.push(chunk);
-            }).on('end', function () {
-                var body = Buffer.concat(bodyChunks);
-                var obj = JSON.parse(body);
-                console.log(obj['deal']);
-                return obj;
-//              console.log('' + body);
-            })
-        }
-        else {
-            return null;
-        }
+        var bodyChunks = [];
+        res.on('data', function (chunk) {
+            bodyChunks.push(chunk);
+        }).on('end', function (body) {
+            var body = Buffer.concat(bodyChunks);
+            body = "" + body;
+            fs.writeFile('mydeals.txt', body, function (err) {
+                if (err) throw err;
+                console.log('Saved!');
+            });
+        })
     });
 }
