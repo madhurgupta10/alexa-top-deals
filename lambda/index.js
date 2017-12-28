@@ -1,5 +1,7 @@
 "use strict";
 var Alexa = require("alexa-sdk");
+var http = require('http');
+var fs = require('fs');
 var SKILL_NAME = "Top Deals";
 var APP_ID = undefined;
 
@@ -22,8 +24,8 @@ var handlers = {
     },
 
     'topDealsIntent': function() {
-        var r = dealer("top");
-        fs.readFile("example.txt", "UTF8", function (err, data) {
+        dealer("top");
+        fs.readFile("mydeals.txt", "UTF8", function (err, data) {
             if (err) { throw err };
             global_data = data;
             console.log(global_data);
@@ -53,8 +55,6 @@ var handlers = {
 }
 
 function dealer(query) {
-    var http = require('http');
-    var fs = require('fs');
     var options = {
         host: 'top-deals-api.herokuapp.com',
         path: '/'+query

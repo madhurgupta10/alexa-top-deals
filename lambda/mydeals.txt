@@ -1,0 +1,164 @@
+{
+  "deal": [
+    {
+      "deal": "Nayasa Frill No. 1 Plastic Fruit Basket Rs. 74 - Amazon ", 
+      "link": "http://amzn.to/2C3RWdn"
+    }, 
+    {
+      "deal": "Nayasa Plastic Basket Set of 2 at Rs. 188 - Amazon ", 
+      "link": "http://amzn.to/2zGn50G"
+    }, 
+    {
+      "deal": "Lakme 9 To 5 Flawless Matte Complexion Compact 8g Rs. 281 - Amazon ", 
+      "link": "http://amzn.to/2C6aARW"
+    }, 
+    {
+      "deal": "American Tourister 28 Ltrs Black Casual Backpack (AMT PING BACKPACK 02 - BLACK) Rs.682 Amazon ", 
+      "link": "http://amzn.to/2zHIvKI"
+    }, 
+    {
+      "deal": "Lakme Lipgloss, Strawberry 15ml Rs. 129 Amazon ", 
+      "link": "http://amzn.to/2C3XEfh"
+    }, 
+    {
+      "deal": "Dettol Fresh Body Wash, 250ml at Rs. 83 @ Amazon ", 
+      "link": "http://amzn.to/2zHIxSQ"
+    }, 
+    {
+      "deal": "Myntra Loot Offer upto Rs. 300 Off + Free Shipping [New Users]  Use Code - MYNTRANEW300 ", 
+      "link": "http://bit.ly/2C3p19n"
+    }, 
+    {
+      "deal": "Lakme Enrich Satins Lip Color Lipstick 4.3g Rs. 186 - Amazon ", 
+      "link": "http://amzn.to/2zHT2pa"
+    }, 
+    {
+      "deal": "[New Users] Lakme Blush & Glow Face Wash Gel 100 g Rs. 105 + Free Shipping - Myntra  Use Code - MYNTRANEW300", 
+      "link": "http://bit.ly/2C3Azts"
+    }, 
+    {
+      "deal": "Airwalk Boys Footwear 50% off from Rs. 249 - Amazon ", 
+      "link": "http://amzn.to/2zHxCss"
+    }, 
+    {
+      "deal": "[New Users] Layerr Body Splash 135 ml Rs. 59 + Free Shipping - Myntra  Use Code - MYNTRANEW300", 
+      "link": "http://bit.ly/2C6aB8s"
+    }, 
+    {
+      "deal": "Pigeon Favourite Induction Base 3lt Outer Lid Pressure Cooker + Rs. 83 Cashback Rs. 549 @ Amazon ", 
+      "link": "http://amzn.to/2pDGqj5"
+    }, 
+    {
+      "deal": "Gear 33 Ltrs Royal Blue and Yellow Casual Backpack (LBPPROSR21012) Rs.779 Amazon ", 
+      "link": "http://amzn.to/2Dq9EnE"
+    }, 
+    {
+      "deal": "Oricum Men's Casual Shoes Upto 55% off from Rs. 459 @ Flipkart ", 
+      "link": "http://bit.ly/2Dr0Aiw"
+    }, 
+    {
+      "deal": "UBER 50% off on next 5 Ride on Link UPI Account ", 
+      "link": "http://ubr.to/2CkduQ4"
+    }, 
+    {
+      "deal": "DTH Recharge upto 20% Cashback - PayTm  Use Code - DTH30", 
+      "link": "http://bit.ly/2Bhof8j"
+    }, 
+    {
+      "deal": "World Wear Minimum 50% off from Rs. 160 - Amazon ", 
+      "link": "http://amzn.to/2CiT5Lg"
+    }, 
+    {
+      "deal": "Havells B-22 3-Watt LED Candle light Rs. 149 - Amazon ", 
+      "link": "http://amzn.to/2DsrtT7"
+    }, 
+    {
+      "deal": "Butterfly Spectra 750-Watt Mixer Grinder with 3 Jars Rs 3568 - Amazon ", 
+      "link": "http://amzn.to/2CibXd5"
+    }, 
+    {
+      "deal": "Pindia MushroomLamp-Fish 0.2-Watt Automatic Night Sensor Mushroom Lamp at Rs. 129 ", 
+      "link": "http://amzn.to/2Dr4Dez"
+    }, 
+    {
+      "deal": "Agro Fresh Black Pepper, 100g at Rs. 85 ", 
+      "link": "http://amzn.to/2CgSN7o"
+    }, 
+    {
+      "deal": "Surf Excel Upto 21% off @ Amazon ", 
+      "link": "http://amzn.to/2DsruXb"
+    }, 
+    {
+      "deal": "Butterfly Grand 500-Watt Mixer Grinder at Rs. 1990 - Amazon ", 
+      "link": "http://amzn.to/2ChUe5C"
+    }, 
+    {
+      "deal": "Cello Checkers Plastic PET Canister Set of 18 Pieces Rs.599 @ Amazon ", 
+      "link": "http://amzn.to/2l2m66n"
+    }, 
+    {
+      "deal": "HP 400 Bluetooth Speakers Rs. 1019 @Amazon ", 
+      "link": "http://amzn.to/2pIXuV2"
+    }, 
+    {
+      "deal": "[Pantry] Surf Excel Easy Wash Detergent Powder - 4 kg at Rs. 390 - Amazon ", 
+      "link": "http://amzn.to/2Drau3L"
+    }, 
+    {
+      "deal": "[Pantry] Kissan Fresh Tomato Ketchup, 950 g Rs.99 - Amazon ", 
+      "link": "http://amzn.to/2CgyIhz"
+    }, 
+    {
+      "deal": "Haixing Plastic Plate 20.5cm, Multicolour at Rs. 44 ", 
+      "link": "http://amzn.to/2Dsry9n"
+    }, 
+    {
+      "deal": "Miamour Plastic Tool Box Rs. 289- Amazon ", 
+      "link": "http://amzn.to/2Ch2Auj"
+    }, 
+    {
+      "deal": "Kodak Ektra With 32GB, 3GB RAM at Rs. 9999 @ Snapdeal ", 
+      "link": "http://bit.ly/2Dsrzdr"
+    }, 
+    {
+      "deal": "Solimo 6 piece Stainless Steel Fork Set Rs. 151 - Amazon ", 
+      "link": "http://amzn.to/2CiYFgy"
+    }, 
+    {
+      "deal": "Intex IT-314U 2.0 Channel Multimedia Speakers Rs. 312 - Amazon ", 
+      "link": "http://amzn.to/2DsrCpD"
+    }, 
+    {
+      "deal": "Nasher Miles New York 4 Wheel 56cm Hard Sided Cabin Luggage at Rs. 3599 @ Amazon ", 
+      "link": "http://amzn.to/2CibYOb"
+    }, 
+    {
+      "deal": "Shopping, Food, Travel & Entertainment Rs.500 cashback on Rs. 5000 with Freecharge Wallet ", 
+      "link": "http://frch.in/2DsrE0J"
+    }, 
+    {
+      "deal": "Usha Shriram Gravity Based Water Purifier 20-Litre Rs. 2099 @ Amazon ", 
+      "link": "http://amzn.to/2CgEwrh"
+    }, 
+    {
+      "deal": "Crompton Arno SWH Vertical Water Heater 6Ltr Rs. 3605, 25Ltr Rs.6493- Amazon ", 
+      "link": "http://amzn.to/2Ds9BrI"
+    }, 
+    {
+      "deal": "Miamour Push-Lock Steel Basket, Silver at Rs. 540- Amazon ", 
+      "link": "http://amzn.to/2CdmW7S"
+    }, 
+    {
+      "deal": "Butterfly Jet 750-Watt Mixer Grinder with 3 Jars Rs. 2948 @ Amazon ", 
+      "link": "http://amzn.to/2DsrGWp"
+    }, 
+    {
+      "deal": "Amiraj Sprout Maker 1500 ml Plastic Food Storage Rs. 104- Amazon ", 
+      "link": "http://amzn.to/2ChHw76"
+    }, 
+    {
+      "deal": "Wonderchef 19 L OTG Toaster Griller Microwave Oven Rs. 2751 - Amazon ", 
+      "link": "http://amzn.to/2DsrJBz"
+    }
+  ]
+}
