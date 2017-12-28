@@ -24,33 +24,10 @@ var handlers = {
     },
 
     'topDealsIntent': function() {
-        this.emit(":ask", function() {
-            dealer("top");
-            fs.readFile('mydeals.txt', 'utf8', function (err, data) {
-                if (err) {
-                    return console.log(err);
-                }
-                console.log(data);
-                data = JSON.parse(data);
-                data = data;
-                data = data['deal'][0]['deal'];
-                var prompt = global_data;
-                var reprompt = global_data;
-            });
-        }, function () {
-            dealer("top");
-            fs.readFile('mydeals.txt', 'utf8', function (err, data) {
-                if (err) {
-                    return console.log(err);
-                }
-                console.log(data);
-                data = JSON.parse(data);
-                data = data;
-                data = data['deal'][0]['deal'];
-                var prompt = global_data;
-                var reprompt = global_data;
-            });
-        });
+        var r = finder();
+        prompt = ""+ r[0];
+        reprompt = ""+ r[1];
+        this.emit(":ask", prompt, reprompt);
     },
 
     'AMAZON.HelpIntent': function() {
@@ -68,6 +45,22 @@ var handlers = {
 
     }
 
+}
+
+function finder() {
+    dealer("top");
+    fs.readFile('mydeals.txt', 'utf8', function (err, data) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log(data);
+        data = JSON.parse(data);
+        data = data;
+        data = data['deal'][0]['deal'];
+        var prompt = global_data;
+        var reprompt = global_data;
+    });
+    return [prompt, reprompt];
 }
 
 function dealer(query) {
