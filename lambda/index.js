@@ -26,7 +26,7 @@ var handlers = {
     'topDealsIntent': function() {
         var r = finder();
         var prompt = ""+ r[0];
-        var reprompt = ""+ r[1];
+        var reprompt = prompt;
         this.emit(":ask", prompt, reprompt);
     },
 
@@ -47,7 +47,7 @@ var handlers = {
 
 }
 
-function finder() {
+function finder(data) {
     dealer("top");
     fs.readFile('mydeals.txt', 'utf8', function (err, data) {
         if (err) {
@@ -57,9 +57,9 @@ function finder() {
         data = JSON.parse(data);
         data = data;
         data = data['deal'][0]['deal'];
-        var prompt = global_data;
-        var reprompt = global_data;
-        return [prompt, reprompt];
+        //var prompt = global_data;
+        //var reprompt = global_data;
+        //return [prompt, reprompt];
     });
 }
 
