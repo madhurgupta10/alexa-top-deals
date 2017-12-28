@@ -25,15 +25,18 @@ var handlers = {
 
     'topDealsIntent': function() {
         dealer("top");
-        fs.readFile("mydeals.txt", "UTF8", function (err, data) {
-            if (err) { throw err };
-            global_data = data;
-            console.log(global_data);
+
+        fs.readFile('mydeals.txt', 'utf8', function (err, data) {
+            if (err) {
+                return console.log(err);
+            }
+            console.log(data);
+            data = JSON.parse(data);
+            data = data;
+            data = data['deal'][0]['deal'];
+            var prompt = global_data;
+            var reprompt = global_data;
         });
-        global_data = JSON.parse(global_data);
-        global_data = global_data['deal'][0]['deal'];
-        var prompt = global_data;
-        var reprompt = global_data;
         this.emit(":ask", prompt, reprompt);
     },
 
