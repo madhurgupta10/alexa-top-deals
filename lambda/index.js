@@ -41,12 +41,8 @@ function dealer(query) {
     });
 }
 
-function mine() {
-    setTimeout(function () {
-        var prompt = answer;
-        return prompt;
-    }, 1000);
-}
+// function mine() {
+// }
 
 exports.handler = function(event, context, callback){
     var alexa = Alexa.handler(event, context);
@@ -68,10 +64,13 @@ var handlers = {
 
     'topDealsIntent': function() {
         finder("top");
-        const prompt = mine();
-        this.response.cardRenderer("DEAL", prompt);
-        this.response.speak(prompt);
-        this.emit(':responseReady');
+        //const prompt = mine();
+        setTimeout(function () {
+            var prompt = answer;
+            this.response.cardRenderer("DEAL", prompt);
+            this.response.speak(prompt);
+            this.emit(':responseReady');
+        }, 1000);
     },
 
     'AMAZON.HelpIntent': function() {

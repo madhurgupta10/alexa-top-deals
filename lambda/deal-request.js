@@ -37,3 +37,4 @@ function dealer(query) {
 }
 finder("top");
 setTimeout(function () { var h = answer; console.log(h) }, 1000);
+console.log(h);
