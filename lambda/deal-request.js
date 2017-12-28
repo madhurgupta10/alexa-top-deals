@@ -36,4 +36,4 @@ function dealer(query) {
     });
 }
 finder("top");
-setTimeout(function () { console.log(answer) }, 1000);
+setTimeout(function () { var h = answer; console.log(h) }, 1000);
