@@ -1,6 +1,54 @@
 {
   "deal": [
     {
+      "deal": "[New Users] Levi's Brief from Rs. 43 - Myntra  Use Code - MYNTRANEW300 ", 
+      "link": "http://bit.ly/2BMHl2p"
+    }, 
+    {
+      "deal": "Sanitary Napkins 25% to 43% off from Rs. 99- Amazon ", 
+      "link": "http://amzn.to/2ChQiV6"
+    }, 
+    {
+      "deal": "Amazon EMI Fest ", 
+      "link": "http://amzn.to/2Cdu7iL"
+    }, 
+    {
+      "deal": "Ether Clothing 55% to 80% off from Rs. 164- Flipkart ", 
+      "link": "http://bit.ly/2CeX4e2"
+    }, 
+    {
+      "deal": "Colgate Dental Cream Toothpaste - 400 g (Pack of 2) with 1 Free Dental Cream - 100 g Rs. 126(After Cashback) @PaytmMall  Use Code -  DAILYNEEDS25", 
+      "link": "http://bit.ly/2BPtpok"
+    }, 
+    {
+      "deal": "Men's Top Brands Winter Wear Minimum 70% Off @ Flipkart ", 
+      "link": "http://bit.ly/2CeKH1E"
+    }, 
+    {
+      "deal": "Lotto Men's Sandals from Rs. 241- Amazon ", 
+      "link": "http://amzn.to/2BMeN99"
+    }, 
+    {
+      "deal": "ZOPO COLOR C1 White (White, 8 GB) (1 GB RAM) Rs.2490 Flipkart ", 
+      "link": "http://bit.ly/2ChFGFs"
+    }, 
+    {
+      "deal": "JBL GTO429 4-Inch Co-Axial Speaker (Black) - Set of 2 Rs.4050 Amazon ", 
+      "link": "http://amzn.to/2BPtrws"
+    }, 
+    {
+      "deal": "Kissan Twist Chili Tomato Bottle, 500g Rs.88 @Amazon ", 
+      "link": "http://amzn.to/2CfrXin"
+    }, 
+    {
+      "deal": "Titan Watches 63% off from Rs. 4390 -- TataCliq ", 
+      "link": "http://bit.ly/2BNgJOL"
+    }, 
+    {
+      "deal": "HDFC Bank OnChat Recharge & Bill Payment Rs. 50 cashback on Rs. 100 + Refer & Earn [Any Bank Users] ", 
+      "link": "http://bit.ly/2ChfSsY"
+    }, 
+    {
       "deal": "Nayasa Frill No. 1 Plastic Fruit Basket Rs. 74 - Amazon ", 
       "link": "http://amzn.to/2C3RWdn"
     }, 
@@ -111,54 +159,6 @@
     {
       "deal": "Haixing Plastic Plate 20.5cm, Multicolour at Rs. 44 ", 
       "link": "http://amzn.to/2Dsry9n"
-    }, 
-    {
-      "deal": "Miamour Plastic Tool Box Rs. 289- Amazon ", 
-      "link": "http://amzn.to/2Ch2Auj"
-    }, 
-    {
-      "deal": "Kodak Ektra With 32GB, 3GB RAM at Rs. 9999 @ Snapdeal ", 
-      "link": "http://bit.ly/2Dsrzdr"
-    }, 
-    {
-      "deal": "Solimo 6 piece Stainless Steel Fork Set Rs. 151 - Amazon ", 
-      "link": "http://amzn.to/2CiYFgy"
-    }, 
-    {
-      "deal": "Intex IT-314U 2.0 Channel Multimedia Speakers Rs. 312 - Amazon ", 
-      "link": "http://amzn.to/2DsrCpD"
-    }, 
-    {
-      "deal": "Nasher Miles New York 4 Wheel 56cm Hard Sided Cabin Luggage at Rs. 3599 @ Amazon ", 
-      "link": "http://amzn.to/2CibYOb"
-    }, 
-    {
-      "deal": "Shopping, Food, Travel & Entertainment Rs.500 cashback on Rs. 5000 with Freecharge Wallet ", 
-      "link": "http://frch.in/2DsrE0J"
-    }, 
-    {
-      "deal": "Usha Shriram Gravity Based Water Purifier 20-Litre Rs. 2099 @ Amazon ", 
-      "link": "http://amzn.to/2CgEwrh"
-    }, 
-    {
-      "deal": "Crompton Arno SWH Vertical Water Heater 6Ltr Rs. 3605, 25Ltr Rs.6493- Amazon ", 
-      "link": "http://amzn.to/2Ds9BrI"
-    }, 
-    {
-      "deal": "Miamour Push-Lock Steel Basket, Silver at Rs. 540- Amazon ", 
-      "link": "http://amzn.to/2CdmW7S"
-    }, 
-    {
-      "deal": "Butterfly Jet 750-Watt Mixer Grinder with 3 Jars Rs. 2948 @ Amazon ", 
-      "link": "http://amzn.to/2DsrGWp"
-    }, 
-    {
-      "deal": "Amiraj Sprout Maker 1500 ml Plastic Food Storage Rs. 104- Amazon ", 
-      "link": "http://amzn.to/2ChHw76"
-    }, 
-    {
-      "deal": "Wonderchef 19 L OTG Toaster Griller Microwave Oven Rs. 2751 - Amazon ", 
-      "link": "http://amzn.to/2DsrJBz"
     }
   ]
 }

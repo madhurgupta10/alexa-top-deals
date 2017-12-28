@@ -24,9 +24,8 @@ var handlers = {
     },
 
     'topDealsIntent': function() {
-        var r = finder();
-        var prompt = ""+ r;
-        var reprompt = prompt;
+        finder("top");
+        setTimeout(function () { var prompt = answer; var reprompt = answer }, 1000);
         this.emit(":ask", prompt, reprompt);
     },
 
@@ -53,20 +52,19 @@ function finder(data) {
         if (err) {
             return console.log(err);
         }
-        console.log(data);
         data = JSON.parse(data);
         data = data;
         data = data['deal'][0]['deal'];
+        answer = data;
+        return data;
+        // console.log(data);
     });
-    setTimeout(function () {
-        return ""+data; 
-    }, 3000);
 }
 
 function dealer(query) {
     var options = {
         host: 'top-deals-api.herokuapp.com',
-        path: '/'+query
+        path: '/' + query
     };
 
     var req = http.get(options, function (res) {
