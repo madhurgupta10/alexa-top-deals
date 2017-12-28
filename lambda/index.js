@@ -41,6 +41,14 @@ function dealer(query) {
     });
 }
 
+function mine() {
+    setTimeout(function () {
+        var prompt = answer;
+        var reprompt = answer;
+    }, 1000);
+    return prompt + "";
+}
+
 exports.handler = function(event, context, callback){
     var alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
@@ -61,13 +69,7 @@ var handlers = {
 
     'topDealsIntent': function() {
         finder("top");
-        var prompt = function () {
-            setTimeout(function () {
-                var prompt = answer;
-                var reprompt = answer;
-            }, 1000);
-            return prompt + "";
-        }
+        var prompt = mine();
         this.emit(":ask", prompt, "reprompt");
     },
 
