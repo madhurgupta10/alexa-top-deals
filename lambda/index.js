@@ -44,9 +44,8 @@ function dealer(query) {
 function mine() {
     setTimeout(function () {
         var prompt = answer;
-        var reprompt = answer;
+        return prompt;
     }, 1000);
-    return prompt + "";
 }
 
 exports.handler = function(event, context, callback){
