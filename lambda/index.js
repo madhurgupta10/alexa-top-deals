@@ -25,7 +25,7 @@ var handlers = {
 
     'topDealsIntent': function() {
         var r = finder();
-        var prompt = ""+ r[0];
+        var prompt = ""+ r;
         var reprompt = prompt;
         this.emit(":ask", prompt, reprompt);
     },
