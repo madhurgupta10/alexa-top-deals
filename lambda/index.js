@@ -62,7 +62,7 @@ var handlers = {
             }
             else {
                 //this.emit(':tell', speechOutput);
-                this.emit(":tellWithCard", speechOutput[0], SKILL_NAME, ""+speechOutput[0]+"\n"+speechOutput[1]);
+                this.emit(":tellWithCard", speechOutput[0], SKILL_NAME, "<font size='2'>" + speechOutput[0] + "\n" + speechOutput[1] + "</font>");
                 //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
         });
