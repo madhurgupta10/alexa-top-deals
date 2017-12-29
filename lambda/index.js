@@ -63,16 +63,16 @@ var handlers = {
             }
             else {
                 //this.emit(':tell', speechOutput);
-                var cardString = speechOutput[0][0] + "\n" + speechOutput[1][0] + "\n" +
-                                speechOutput[0][1] + "\n" + speechOutput[1][1] + "\n" +
-                                speechOutput[0][2] + "\n" + speechOutput[1][2] + "\n" +
-                                speechOutput[0][3] + "\n" + speechOutput[1][3] + "\n" +
+                var cardString = speechOutput[0][0] + "\n" + speechOutput[1][0] + "\n" + "\n"
+                                speechOutput[0][1] + "\n" + speechOutput[1][1] + "\n" + "\n"
+                                speechOutput[0][2] + "\n" + speechOutput[1][2] + "\n" + "\n"
+                                speechOutput[0][3] + "\n" + speechOutput[1][3] + "\n" + "\n"
                                 speechOutput[0][4] + "\n" + speechOutput[1][4] + "\n"
-                var speechString = speechOutput[0][0] + "...." +
-                                    speechOutput[0][1] + "...." +
-                                    speechOutput[0][2] + "...." +
-                                    speechOutput[0][3] + "...." +
-                                    speechOutput[0][4] + "...."
+                var speechString = speechOutput[0][0] + ",,,," +
+                                    speechOutput[0][1] + ",,,," +
+                                    speechOutput[0][2] + ",,,," +
+                                    speechOutput[0][3] + ",,,," +
+                                    speechOutput[0][4] + ",,,,"
                 this.emit(":tellWithCard", speechString, SKILL_NAME, cardString);
                 //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
