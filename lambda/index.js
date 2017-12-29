@@ -23,7 +23,7 @@ function dealer(contextWord, _callback) {
                 if (_callback) {
                     var randIndex = Math.floor(Math.random() * (deals.length - 1));
                     if (deals[randIndex]) {
-                        return _callback(deals[randIndex]);
+                        return _callback([deals[randIndex], deals[0]]);
                     }
                 }
             }
@@ -62,7 +62,7 @@ var handlers = {
             }
             else {
                 //this.emit(':tell', speechOutput);
-                this.emit(":tellWithCard", speechOutput, SKILL_NAME, "THIS IS A CARD \n THIS IS ANOTHER LINE");
+                this.emit(":tellWithCard", speechOutput[0], SKILL_NAME, ""+speechOutput[0]+"\n"+speechOutput[1]);
                 //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
         });
