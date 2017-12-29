@@ -62,7 +62,8 @@ var handlers = {
             }
             else {
                 //this.emit(':tell', speechOutput);
-                this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
+                this.emit(":tellWithCard", speechOutput, SKILL_NAME, "THIS IS A CARD \n THIS IS ANOTHER LINE");
+                //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
         });
     },
@@ -79,7 +80,7 @@ var handlers = {
     },
 
     'AMAZON.CancelIntent': function() {
-        this.emit(':tell', "Okay, cancelling your request");
+        this.emit(':tell', "I wish you and your family a very happy new year, GoodBye!");
 
     },
 
@@ -89,7 +90,7 @@ var handlers = {
             if (speechOutput == '') {
                 this.emit('Unhandled');
             } else {
-                this.emit(':tell', "YO YO");
+                this.emit(':tell', "Sorry, I am not able to find deals right now");
             }
         });
     }
