@@ -1,48 +1,42 @@
 "use strict";
 var Alexa = require("alexa-sdk");
-var http = require('http');
-var fs = require('fs');
+var request = require('request');
 var SKILL_NAME = "Top Deals";
 var APP_ID = undefined;
 
-function finder(data) {
-    dealer("top");
-    fs.readFile('mydeals.txt', 'utf8', function (err, data) {
-        if (err) {
-            return console.log(err);
-        }
-        data = JSON.parse(data);
-        data = data;
-        data = data['deal'][0]['deal'];
-        // answer = data;
-        // return data;
-        // console.log(data);
-    });
-}
-
-function dealer(query) {
+function dealer(contextWord, _callback) {
     var options = {
-        host: 'top-deals-api.herokuapp.com',
-        path: '/' + query
+        url: 'https://top-deals-api.herokuapp.com/' + contextWord
     };
 
-    var req = http.get(options, function (res) {
-        var bodyChunks = [];
-        res.on('data', function (chunk) {
-            bodyChunks.push(chunk);
-        }).on('end', function (body) {
-            var body = Buffer.concat(bodyChunks);
-            body = "" + body;
-            fs.writeFile('mydeals.txt', body, function (err) {
-                if (err) throw err;
-                console.log('Saved!');
-            });
-        })
+    request(options, (error, response, body) => {
+        if (!error && response.statusCode == 200) {
+            //Get the info
+            var info = JSON.parse(body);
+            info = info['deal'];
+            var deals = [];
+
+            //Search it to make sure the syllable count is the same
+            if (info) {
+                for (var i = 0; i < info.length; i++) {
+                    deals.push(info[i].deal);
+                }
+                if (_callback) {
+                    var randIndex = Math.floor(Math.random() * (deals.length - 1));
+                    if (deals[randIndex]) {
+                        return _callback(deals[randIndex]);
+                    }
+                }
+            }
+        } else {
+            console.log("Error making request: " + error);
+        }
+
+        if (_callback) {
+            return _callback('');
+        }
     });
 }
-
-// function mine() {
-// }
 
 exports.handler = function(event, context, callback){
     var alexa = Alexa.handler(event, context);
@@ -62,15 +56,22 @@ var handlers = {
         this.emit(":ask", prompt, reprompt);
     },
 
-    'topDealsIntent': function() {
-        finder("top");
-        //const prompt = mine();
-        setTimeout(function () {
-            var prompt = answer;
-            this.response.cardRenderer("DEAL", prompt);
-            this.response.speak(prompt);
-            this.emit(':responseReady');
-        }, 1000);
+    'topDealsIntent': function () {
+        // if (wordInput == null || wordInput === "undefined" || wordInput == '') { //Alexa doesnt understand the word, so User loses.
+        //     this.emit('Unhandled'); //send to unhandled handler
+        // }
+        // else {
+            dealer("top", (speechOutput) => {
+                if (speechOutput == '') {
+                    this.emit('Unhandled');
+                }
+                else {
+                    this.emit(':tell', speechOutput);
+                    this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput);
+                    //this.emit(':ask', speechOutput);
+                }
+            });
+        // }
     },
 
     'AMAZON.HelpIntent': function() {
@@ -83,9 +84,21 @@ var handlers = {
         this.emit(':tell', "I wish you and your family a very happy new year, GoodBye!");
         
     },
+
     'AMAZON.CancelIntent': function() {
         this.emit(':tell', "Okay, cancelling your request");
 
-    }
+    },
 
+    'Unhandled': function () {
+        console.log("UNHANDLED");
+        //If the users sentence really made no sense at all, then just choose a random word to finish with.
+        dealer("top", (speechOutput) => {
+            if (speechOutput == '') {
+                this.emit('Unhandled');
+            } else {
+                this.emit(':tell', "YO YO");
+            }
+        });
+    }
 }
