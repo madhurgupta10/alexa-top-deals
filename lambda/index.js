@@ -16,19 +16,15 @@ function dealer(contextWord, _callback) {
             info = info['deal'];
             var deals = [];
             var links = [];
-            var cardString = "";
-            //Search it to make sure the syllable count is the same
             if (info) {
                 for (var i = 0; i < 5; i++) {
                     deals.push(info[i].deal);
                     links.push(info[i].link);
-                    speechString = "" + info[i].deal + "....";
-                    cardString = "" + info[i].deal + "\n" + info[i].link + "\n";
                 }
                 if (_callback) {
-                    //var randIndex = Math.floor(Math.random() * (deals.length - 1));
-                    if (cardString) {
-                        return _callback([speechString, cardString]);
+                    var randIndex = Math.floor(Math.random() * (deals.length - 1));
+                    if (deals[randIndex]) {
+                        return _callback([deals, links]);
                     }
                 }
             }
@@ -67,7 +63,7 @@ var handlers = {
             }
             else {
                 //this.emit(':tell', speechOutput);
-                this.emit(":tellWithCard", speechOutput[0], SKILL_NAME, speechOutput[1]);
+                this.emit(":tellWithCard", speechOutput[0][3], SKILL_NAME, speechOutput[1][3]);
                 //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
         });
