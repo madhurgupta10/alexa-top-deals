@@ -51,8 +51,8 @@ var handlers = {
     },
 
     'startIntent': function() {
-        var prompt = "Hi, Welcome to Top Deals. Ask me to find top five or top ten deals";
-        var reprompt = "Try saying. Alexa, find me the top ten deals";
+        var prompt = "Hi, Welcome to Top Deals. I will make your new year shopping easy just ask me to find top five deals from flipkart or top five deals from amazon";
+        var reprompt = "Try saying. Alexa, find me the top five deals";
         this.emit(":ask", prompt, reprompt);
     },
 
@@ -62,7 +62,6 @@ var handlers = {
                 this.emit('Unhandled');
             }
             else {
-                //this.emit(':tell', speechOutput);
                 var cardString = speechOutput[0][0] + "\n" + speechOutput[1][0] + "\n" + "\n" +
                                 speechOutput[0][1] + "\n" + speechOutput[1][1] + "\n" + "\n" +
                                 speechOutput[0][2] + "\n" + speechOutput[1][2] + "\n" + "\n" +
@@ -74,14 +73,53 @@ var handlers = {
                                     speechOutput[0][3] + ",,,," +
                                     speechOutput[0][4] + ",,,,"
                 this.emit(":tellWithCard", speechString, SKILL_NAME, cardString);
-                //this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
+            }
+        });
+    },
+
+    'topAmazonDealsIntent': function () {
+        dealer("search/Amazon", (speechOutput) => {
+            if (speechOutput == '') {
+                this.emit('Unhandled');
+            } else {
+                var cardString = speechOutput[0][0] + "\n" + speechOutput[1][0] + "\n" + "\n" +
+                    speechOutput[0][1] + "\n" + speechOutput[1][1] + "\n" + "\n" +
+                    speechOutput[0][2] + "\n" + speechOutput[1][2] + "\n" + "\n" +
+                    speechOutput[0][3] + "\n" + speechOutput[1][3] + "\n" + "\n" +
+                    speechOutput[0][4] + "\n" + speechOutput[1][4] + "\n"
+                var speechString = speechOutput[0][0] + ",,,," +
+                    speechOutput[0][1] + ",,,," +
+                    speechOutput[0][2] + ",,,," +
+                    speechOutput[0][3] + ",,,," +
+                    speechOutput[0][4] + ",,,,"
+                this.emit(":tellWithCard", speechString, SKILL_NAME, cardString);
+            }
+        });
+    },
+
+    'topFlipkartDealsIntent': function () {
+        dealer("search/Flipkart", (speechOutput) => {
+            if (speechOutput == '') {
+                this.emit('Unhandled');
+            } else {
+                var cardString = speechOutput[0][0] + "\n" + speechOutput[1][0] + "\n" + "\n" +
+                    speechOutput[0][1] + "\n" + speechOutput[1][1] + "\n" + "\n" +
+                    speechOutput[0][2] + "\n" + speechOutput[1][2] + "\n" + "\n" +
+                    speechOutput[0][3] + "\n" + speechOutput[1][3] + "\n" + "\n" +
+                    speechOutput[0][4] + "\n" + speechOutput[1][4] + "\n"
+                var speechString = speechOutput[0][0] + ",,,," +
+                    speechOutput[0][1] + ",,,," +
+                    speechOutput[0][2] + ",,,," +
+                    speechOutput[0][3] + ",,,," +
+                    speechOutput[0][4] + ",,,,"
+                this.emit(":tellWithCard", speechString, SKILL_NAME, cardString);
             }
         });
     },
 
     'AMAZON.HelpIntent': function() {
-        var prompt = "Try saying. Alexa, find me the top ten deals on Amazon";
-        var reprompt = "Try saying. Alexa, find me the top ten deals on Flipkart";
+        var prompt = "Try saying. Alexa, find me the top five deals on Amazon";
+        var reprompt = "Try saying. Alexa, find me the top five deals on Flipkart";
         this.emit(":ask", prompt, reprompt);
     },
 
