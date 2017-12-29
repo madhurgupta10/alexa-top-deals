@@ -15,7 +15,6 @@ function dealer(contextWord, _callback) {
             var info = JSON.parse(body);
             info = info['deal'];
             var deals = [];
-
             //Search it to make sure the syllable count is the same
             if (info) {
                 for (var i = 0; i < info.length; i++) {
@@ -28,10 +27,10 @@ function dealer(contextWord, _callback) {
                     }
                 }
             }
-        } else {
+        }
+        else {
             console.log("Error making request: " + error);
         }
-
         if (_callback) {
             return _callback('');
         }
@@ -57,21 +56,15 @@ var handlers = {
     },
 
     'topDealsIntent': function () {
-        // if (wordInput == null || wordInput === "undefined" || wordInput == '') { //Alexa doesnt understand the word, so User loses.
-        //     this.emit('Unhandled'); //send to unhandled handler
-        // }
-        // else {
-            dealer("top", (speechOutput) => {
-                if (speechOutput == '') {
-                    this.emit('Unhandled');
-                }
-                else {
-                    this.emit(':tell', speechOutput);
-                    this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput);
-                    //this.emit(':ask', speechOutput);
-                }
-            });
-        // }
+        dealer("top", (speechOutput) => {
+            if (speechOutput == '') {
+                this.emit('Unhandled');
+            }
+            else {
+                this.emit(':tell', speechOutput);
+                this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput);
+            }
+        });
     },
 
     'AMAZON.HelpIntent': function() {
@@ -92,7 +85,6 @@ var handlers = {
 
     'Unhandled': function () {
         console.log("UNHANDLED");
-        //If the users sentence really made no sense at all, then just choose a random word to finish with.
         dealer("top", (speechOutput) => {
             if (speechOutput == '') {
                 this.emit('Unhandled');
