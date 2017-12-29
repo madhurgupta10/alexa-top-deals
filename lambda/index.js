@@ -61,8 +61,8 @@ var handlers = {
                 this.emit('Unhandled');
             }
             else {
-                this.emit(':tell', speechOutput);
-                this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput);
+                //this.emit(':tell', speechOutput);
+                this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), speechOutput+"/n"+speechOutput);
             }
         });
     },
