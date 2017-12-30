@@ -47,7 +47,7 @@ exports.handler = function(event, context, callback){
 
 var handlers = {
     'LaunchRequest': function() {
-        this.emit('startGameIntent');
+        this.emit('startIntent');
     },
 
     'startIntent': function() {
